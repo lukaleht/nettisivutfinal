@@ -1,16 +1,16 @@
-const navToggle = document.getElementById("navToggle");
-const nav = document.getElementById("nav");
-
-navToggle.addEventListener("click", () => {
-  nav.classList.toggle("show");
-});
-
-// Form demo message
-const form = document.getElementById("contactForm");
-const msg = document.getElementById("formMessage");
-
-form.addEventListener("submit", (e) => {
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
   e.preventDefault();
-  msg.textContent = "Kiitos! Viestisi on lähetetty (demo).";
-  form.reset();
+
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: name.value,
+      email: email.value,
+      message: message.value
+    })
+  });
+
+  const text = await res.text();
+  document.getElementById("status").innerText = text;
 });
