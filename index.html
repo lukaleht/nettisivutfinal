@@ -1,1 +1,145 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ammattimainen yrityssivu – palvelut, referenssit ja yhteydenotto." />
+  <title>Yrityssivu</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Yritys</a>
+
+      <nav class="nav" id="nav">
+        <a href="#services">Palvelut</a>
+        <a href="#projects">Referenssit</a>
+        <a href="#contact">Yhteydenotto</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Laadukkaat ratkaisut yrityksellesi</h1>
+          <p>Tarjoamme selkeää ja luotettavaa palvelua, joka auttaa sinua saavuttamaan tavoitteet nopeasti ja kustannustehokkaasti.</p>
+          <a class="btn" href="#contact">Pyydä tarjous</a>
+        </div>
+        <div class="hero-card">
+          <h2>Ota yhteyttä</h2>
+          <p>Vastaamme yleensä saman päivän aikana.</p>
+          <div class="hero-card-row">
+            <span class="hero-card-label">Puhelin</span>
+            <span class="hero-card-value">+358 40 123 4567</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-label">Sähköposti</span>
+            <span class="hero-card-value">info@yritys.fi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Palvelumme</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Palvelu 1</h3>
+            <p>Selkeä ja ammattimainen palvelukuvaus, joka kertoo asiakkaalle mitä hän saa.</p>
+          </article>
+          <article class="card">
+            <h3>Palvelu 2</h3>
+            <p>Ratkaisut, jotka säästävät aikaa ja rahaa – ilman turhaa monimutkaisuutta.</p>
+          </article>
+          <article class="card">
+            <h3>Palvelu 3</h3>
+            <p>Asiantunteva tuki ja jatkuva kehitys, jotta palvelu toimii myös tulevaisuudessa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Referenssit</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Referenssi 1</h3>
+            <p>Lyhyt kuvaus projektista ja sen hyödyistä asiakkaalle.</p>
+          </article>
+          <article class="card">
+            <h3>Referenssi 2</h3>
+            <p>Lyhyt kuvaus projektista ja sen hyödyistä asiakkaalle.</p>
+          </article>
+          <article class="card">
+            <h3>Referenssi 3</h3>
+            <p>Lyhyt kuvaus projektista ja sen hyödyistä asiakkaalle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Yhteydenotto</h2>
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <label>
+              Nimi
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Sähköposti
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Viesti
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn" type="submit">Lähetä</button>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+
+          <div class="contact-info">
+            <h3>Toimisto</h3>
+            <p>Osoite</p>
+            <p>12345 Kaupunki</p>
+            <p>Suomi</p>
+            <div class="contact-info-row">
+              <span>Puhelin:</span>
+              <span>+358 40 123 4567</span>
+            </div>
+            <div class="contact-info-row">
+              <span>Sähköposti:</span>
+              <span>info@yritys.fi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Yritys. Kaikki oikeudet pidätetään.</p>
+      <div class="footer-links">
+        <a href="#top">Takaisin ylös</a>
+        <a href="#contact">Yhteydenotto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
